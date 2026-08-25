@@ -1,0 +1,59 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+body { background: #F4F6F9; color: #1F2937; }
+
+.auth-wrapper { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.auth-card { background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); width: 100%; max-width: 380px; }
+.auth-card h2 { color: #21295C; margin-bottom: 6px; }
+.subtitle { color: #6B7280; font-size: 14px; margin-bottom: 24px; }
+.auth-card form { display: flex; flex-direction: column; gap: 6px; }
+.auth-card label { font-size: 13px; color: #374151; margin-top: 10px; }
+.auth-card input, .auth-card select { padding: 10px 12px; border: 1px solid #D1D5DB; border-radius: 8px; font-size: 14px; }
+.auth-card input:focus, .auth-card select:focus { outline: none; border-color: #065A82; }
+
+.btn { display: inline-block; text-align: center; background: #065A82; color: #fff; border: none; padding: 11px 16px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; margin-top: 18px; text-decoration: none; }
+.btn:hover { background: #054766; }
+.btn-secondary { background: #E5E7EB; color: #1F2937; }
+.btn-danger { background: #DC2626; }
+
+.alert { padding: 10px 14px; border-radius: 8px; font-size: 13px; margin-bottom: 10px; }
+.alert-error { background: #FEE2E2; color: #991B1B; }
+.alert-success { background: #DCFCE7; color: #166534; }
+.alert-info { background: #DBEAFE; color: #1E3A8A; }
+
+/* Layout umum halaman dalam (dashboard, absen saya) */
+.topbar { background: #21295C; color: #fff; padding: 14px 28px; display: flex; justify-content: space-between; align-items: center; }
+.topbar .brand { font-weight: 700; }
+.topbar a { color: #C7D2FE; text-decoration: none; font-size: 14px; }
+.container { max-width: 1100px; margin: 0 auto; padding: 28px 20px; }
+
+/* Halaman Absen Saya */
+.absen-grid { display: grid; grid-template-columns: 340px 1fr; gap: 24px; }
+@media (max-width: 800px) { .absen-grid { grid-template-columns: 1fr; } }
+
+.card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+.qr-card { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.qr-card #qr-box { width: 220px; height: 220px; display: flex; align-items: center; justify-content: center; background: #F9FAFB; border-radius: 10px; margin: 10px 0; }
+.qr-card #qr-box img { width: 100%; height: 100%; }
+.qr-timer { font-size: 13px; color: #6B7280; }
+.qr-status { margin-top: 12px; font-weight: 600; font-size: 14px; }
+.qr-status.waiting { color: #B45309; }
+.qr-status.success { color: #166534; }
+
+.info-row { display: flex; gap: 16px; margin-bottom: 20px; }
+.info-box { flex: 1; background: #fff; border-radius: 12px; padding: 18px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+.info-box .label { font-size: 12px; color: #6B7280; }
+.info-box .value { font-size: 22px; font-weight: 700; color: #21295C; margin-top: 4px; }
+
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; }
+table th, table td { padding: 12px 14px; text-align: left; font-size: 14px; border-bottom: 1px solid #F0F1F3; }
+table th { background: #F9FAFB; color: #374151; font-size: 12px; text-transform: uppercase; }
+.badge { padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.badge-hadir { background: #DCFCE7; color: #166534; }
+.badge-telat { background: #FEF3C7; color: #92400E; }
+.badge-alpha { background: #FEE2E2; color: #991B1B; }
+
+.page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.form-inline { display: flex; gap: 10px; flex-wrap: wrap; align-items: end; }
+
+/* Halaman scan HP */
+.scan-wrapper { max-width: 360px; margin: 0 auto; padding: 30px 20px; }
